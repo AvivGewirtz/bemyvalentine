@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will you be my Valentine? 💕</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true">
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+  </div>
+
+  <main class="container">
+    <!-- Initial Screen -->
+    <section id="question-screen" class="screen active">
+      <div class="heart-float">💕</div>
+      <h1 class="title animate-fade-in">Bar Weiss, Will you be my Valentine?</h1>
+      <p class="subtitle animate-fade-in">Please say yes... pretty please? 💕</p>
+      
+      <div class="buttons animate-fade-in">
+        <button id="yes-btn" class="btn btn-yes">
+          <span>Yes! 💖</span>
+        </button>
+        <button id="no-btn" class="btn btn-no">
+          <span>No</span>
+        </button>
+      </div>
+
+      <div id="invalid-message" class="invalid-message hidden">
+        <span class="invalid-emoji">😤</span>
+        <p>You can't say no to this!</p>
+        <p class="invalid-sub">You <em>have</em> to say yes! Come on baby 💕</p>
+      </div>
+    </section>
+
+    <!-- Success Screen -->
+    <section id="success-screen" class="screen">
+      <div class="success-content">
+        <div class="confetti-hearts" aria-hidden="true"></div>
+        <h2 class="success-title">Yay! You said yes! 🎉💖</h2>
+        <div class="invitation-box">
+          <img src="assets/couple-beach.png" alt="Us at the beach" class="couple-photo" />
+          <p class="invitation-text">
+            I invite you to be my Valentine on
+          </p>
+          <p class="invitation-date">Saturday, February 14th, 2026</p>
+          <p class="invitation-detail">
+            Let's make it the most special day ever with sushi, love and surprises! 💕
+          </p>
+          <p class="invitation-sign">With all my love, always 💝</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
